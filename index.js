@@ -80,9 +80,9 @@ rtm.on(RTM_EVENTS.MESSAGE, function(message) {
                 setTimeout(doNetworkMessage, 1250);
               }
             }
-if (command == "nb") {
-  newBlockCheck();
-}
+            if (command == "nb") {
+              newBlockCheck();
+            }
 
             if (command == "pool") { 
               activateLock();
@@ -792,7 +792,7 @@ else {
 			console.log('I was not able to ping the coin. This is my passed:'+passed)
 		}
 	});
-	}
+}
 }
 
 var cmcPassed;
